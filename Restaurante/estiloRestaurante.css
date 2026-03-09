@@ -1,0 +1,104 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+/* Encabezado Principal */
+header {
+    background-color: #8b0000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Contenido Principal */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+h2 {
+    color: #8b0000;
+    margin-bottom: 30px;
+}
+
+/* Tarjeta del Formulario */
+.form-container {
+    background-color: #f9f9f9;
+    padding: 50px;
+    padding-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); 
+    width: 50%;
+    border: 1px solid #ddd;
+}
+
+/* Estilos de los campos del Formulario */
+.form-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Botón de Envío */
+button {
+    background-color: #8b0000;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a50000;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #8b0000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    width: 100%;
+}
