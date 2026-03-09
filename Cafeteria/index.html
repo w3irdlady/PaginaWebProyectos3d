@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Coffee Tasting Log | Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Aroma & Grano</h1>
+    </header>
+
+    <main>
+        <h2>Bitácora de Cata de Café</h2>
+        
+        <div class="form-container">
+            <h2 id="NuevaCata">Registrar Nueva Variedad</h2>
+            <form id="cataForm">
+                <div class="form-group">
+                    <label for="origen">Origen del Grano</label>
+                    <input type="text" id="origen" placeholder="Ej. Etíopes, Colombia..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tostado">Nivel de Tostado</label>
+                    <select id="tostado">
+                        <option value="Ligero">Ligero</option>
+                        <option value="Medio">Medio</option>
+                        <option value="Oscuro">Oscuro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="puntuacion">Puntuación (1-10)</label>
+                    <input type="range" id="puntuacion" min="1" max="10" value="5">
+                </div>
+
+                <div class="form-group">
+                    <label for="notas">Notas de Sabor</label>
+                    <textarea id="notas" placeholder="Ej. Notas florales, cuerpo medio..."></textarea>
+                </div>
+
+                <button type="submit">Guardar en Bitácora</button>
+            </form>
+        </div>
+
+        <section class="tabla-seccion">
+            <h3>Historial de Catas</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Origen</th>
+                        <th>Tostado</th>
+                        <th>Punt.</th>
+                        <th>Notas</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaCuerpo">
+                    </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer> 
+        <p>© 2024 Aroma & Grano | Proyecto de Portfolio Frontend</p>
+    </footer>
+     
+    <script src="app.js"></script>
+</body>
+</html>
